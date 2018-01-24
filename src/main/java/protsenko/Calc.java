@@ -5,7 +5,6 @@ import java.util.Objects;
 public final class Calc {
 
     private final int arg;
-    private int arg2;
 
     public Calc(int arg) {
         this.arg = arg;
