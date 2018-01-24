@@ -18,7 +18,7 @@
         <sonar.language>java</sonar.language>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-        <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+        <sonar.jacoco.reportPaths>${project.basedir}/jacoco.exec</sonar.jacoco.reportPaths>
         <sonar.host.url>https://sonarcloud.io/</sonar.host.url>
     </properties>
 
