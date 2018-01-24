@@ -15,11 +15,14 @@
 
         <jacoco.plugin.version>0.8.0</jacoco.plugin.version>
 
-        <sonar.language>java</sonar.language>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.jacoco.reportPaths>${project.build.directory}/jacoco.exec</sonar.jacoco.reportPaths>
+        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+
+        <sonar.language>java</sonar.language>
         <sonar.host.url>https://sonarcloud.io/</sonar.host.url>
+        <sonar.organization>protsenko-github</sonar.organization>
+        <sonar.login>7a4f3296969a9d313427344a9d5c031ff4ebb58b</sonar.login>
     </properties>
 
     <build>
