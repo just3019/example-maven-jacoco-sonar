@@ -8,8 +8,8 @@ branches:
     - master
 
 script:
-  - ./mvn clean
-  - ./mvn verify
+  - mvn clean
+  - mvn verify
 
 after_success:
-  - ./mvn sonar:sonar -Dsonar.organization=${SONAR_ORGANIZATION} -Dsonar.login=${SONAR_TOKEN} -Dsonar.host.url=${SONAR_HOST}
+  - mvn sonar:sonar -Dsonar.organization=${SONAR_ORGANIZATION} -Dsonar.login=${SONAR_TOKEN} -Dsonar.host.url=${SONAR_HOST}
