@@ -4,7 +4,7 @@
 
     <groupId>protsenko</groupId>
     <artifactId>example-maven-jacoco-sonar</artifactId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.2</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,7 +24,7 @@
         <url>https://github.com/protsenko/example-maven-jacoco-sonar</url>
         <connection>scm:git:ssh://github.com/protsenko/example-maven-jacoco-sonar.git</connection>
         <!--<developerConnection>scm:git:git://github.com:protsenko/example-maven-jacoco-sonar.git</developerConnection>-->
-        <tag>HEAD</tag>
+        <tag>v1.2</tag>
     </scm>
 
     <build>
