@@ -14,6 +14,14 @@ public final class Calc {
         return new Calc(this.arg + arg.arg);
     }
 
+    public Calc diff(Calc arg) {
+        return this.add(arg.neg());
+    }
+
+    public Calc neg() {
+        return new Calc((-1) * this.arg);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
