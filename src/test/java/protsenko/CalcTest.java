@@ -55,4 +55,10 @@ public class CalcTest {
         Calc arg2 = new Calc(-5);
         assertFalse(arg1.equals(arg2));
     }
+
+    @Test
+    public void failObjectsEquallityBecauseOfDiffClasses() {
+        Calc arg1 = new Calc(5);
+        assertFalse(arg1.equals(new Integer(5)));
+    }
 }
