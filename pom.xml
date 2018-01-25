@@ -23,7 +23,7 @@
     <scm>
         <url>https://github.com/protsenko/example-maven-jacoco-sonar</url>
         <connection>scm:git:https://github.com/protsenko/example-maven-jacoco-sonar.git</connection>
-        <!--<developerConnection>scm:git:git://github.com:protsenko/example-maven-jacoco-sonar.git</developerConnection>-->
+        <developerConnection>scm:git:git://github.com:protsenko/example-maven-jacoco-sonar.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
