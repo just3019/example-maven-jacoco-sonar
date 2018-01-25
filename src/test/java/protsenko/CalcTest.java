@@ -29,4 +29,30 @@ public class CalcTest {
         Calc expectedResult = new Calc(1);
         assertEquals(expectedResult, actualResult);
     }
+
+    @Test
+    public void equalToItself() {
+        Calc arg = new Calc(5);
+        assertTrue(arg.equals(arg));
+    }
+
+    @Test
+    public void notEqualToNull() {
+        Calc arg = new Calc(5);
+        assertFalse(arg.equals(null));
+    }
+
+    @Test
+    public void successObjectsEquallity() {
+        Calc arg1 = new Calc(5);
+        Calc arg2 = new Calc(5);
+        assertTrue(arg1.equals(arg2));
+    }
+
+    @Test
+    public void failObjectsEquallity() {
+        Calc arg1 = new Calc(5);
+        Calc arg2 = new Calc(-5);
+        assertFalse(arg1.equals(arg2));
+    }
 }
