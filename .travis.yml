@@ -1,0 +1,15 @@
+language: java
+sudo: false
+jdk:
+  - oraclejdk8
+
+branches:
+  only:
+    - master
+
+script:
+  - ./mvnw clean
+  - ./mvnw verify
+
+after_success:
+  - ./mvnw sonar:sonar -Dsonar.organization=${SONAR_ORGANIZATION} -Dsonar.login=${SONAR_TOKEN} -Dsonar.host.url=${SONAR_HOST}
