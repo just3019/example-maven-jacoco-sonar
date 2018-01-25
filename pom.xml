@@ -20,9 +20,6 @@
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
 
         <sonar.language>java</sonar.language>
-        <sonar.host.url>https://sonarcloud.io/</sonar.host.url>
-        <sonar.organization>protsenko-github</sonar.organization>
-        <sonar.login>7a4f3296969a9d313427344a9d5c031ff4ebb58b</sonar.login>
     </properties>
 
     <build>
