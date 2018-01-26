@@ -115,22 +115,40 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
-                <groupId>org.pitest</groupId>
-                <artifactId>pitest-maven</artifactId>
-                <version>${pit.plugin.version}</version>
-                <configuration>
-                    <targetClasses>
-                        <param>protsenko.*</param>
-                    </targetClasses>
-                    <targetTests>
-                        <param>protsenko.*</param>
-                    </targetTests>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>mutation-testing</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.pitest</groupId>
+                        <artifactId>pitest-maven</artifactId>
+                        <version>${pit.plugin.version}</version>
+                        <executions>
+                            <execution>
+                                <id>pit-report</id>
+                                <phase>test</phase>
+                                <goals>
+                                    <goal>mutationCoverage</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <!--<configuration>-->
+                            <!--<targetClasses>-->
+                                <!--<param>protsenko.*</param>-->
+                            <!--</targetClasses>-->
+                            <!--<targetTests>-->
+                                <!--<param>protsenko.*</param>-->
+                            <!--</targetTests>-->
+                        <!--</configuration>-->
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
     <dependencies>
         <dependency>
