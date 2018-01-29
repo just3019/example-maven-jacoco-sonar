@@ -2,14 +2,15 @@ language: java
 sudo: false
 jdk:
   - oraclejdk8
-
+cache:
+  directories:
+    - $HOME/.m2
 branches:
   only:
     - master
-
 script:
-  - mvn clean
-  - mvn verify
-
+  - mvn clean verify --batch-mode
 after_success:
   - mvn sonar:sonar -Dsonar.organization=${SONAR_ORGANIZATION} -Dsonar.login=${SONAR_TOKEN} -Dsonar.host.url=${SONAR_HOST}
+  - "bash <(curl -s https://codecov.io/bash)"
+
