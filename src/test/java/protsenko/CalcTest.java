@@ -61,4 +61,11 @@ public class CalcTest {
         Calc arg1 = new Calc(5);
         assertFalse(arg1.equals(new Integer(5)));
     }
+
+    @Test
+    public void hashOfEqualObjectsShouldBeSame() {
+        int hashCode1 = new Calc(5).hashCode();
+        int hashCode2 = new Calc(5).hashCode();
+        assertTrue(hashCode1 == hashCode2);
+    }
 }
