@@ -98,7 +98,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>${release.plugin.version}</version>
                 <configuration>
-                    <connectionUrl>scm:git:ssh://github.com/protsenko/example-maven-jacoco-sonar.git</connectionUrl>
+                    <!--<connectionUrl>scm:git:ssh://github.com/protsenko/example-maven-jacoco-sonar.git</connectionUrl>-->
                     <tagNameFormat>v@{project.version}</tagNameFormat>
                 </configuration>
             </plugin>
