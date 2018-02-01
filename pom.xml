@@ -27,8 +27,8 @@
     </properties>
 
     <scm>
+        <url>https://github.com/protsenko/example-maven-jacoco-sonar</url>
         <connection>scm:git:ssh://github.com/protsenko/example-maven-jacoco-sonar.git</connection>
-        <developerConnection>scm:git:ssh://github.com/protsenko/example-maven-jacoco-sonar.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
