@@ -22,6 +22,10 @@ public final class Calc {
         return new Calc((-1) * this.arg);
     }
 
+    public Calc square() {
+        return new Calc(this.arg * this.arg);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
