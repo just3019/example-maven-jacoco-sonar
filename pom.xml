@@ -138,7 +138,14 @@
                                 </goals>
                             </execution>
                         </executions>
-
+                        <!--<configuration>-->
+                            <!--<targetClasses>-->
+                                <!--<param>protsenko.*</param>-->
+                            <!--</targetClasses>-->
+                            <!--<targetTests>-->
+                                <!--<param>protsenko.*</param>-->
+                            <!--</targetTests>-->
+                        <!--</configuration>-->
                     </plugin>
                 </plugins>
             </build>
